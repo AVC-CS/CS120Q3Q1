@@ -2,15 +2,28 @@
 #include <iomanip>
 #include <cmath>
 using namespace std;
+
 int main()
 {
-  double a, b, c;
-  double result1, result2;
+    double a, b, c;
+    // TODO
+    cin >> a >> b >> c;
 
-  /* ************************************
-   *  Code your program here
-   ************************************ */
+    // TODO
+    double discriminant = b * b - 4 * a * c;
+    // TODO
+    double root1 = (-b + sqrt(discriminant)) / (2 * a);
+    // TODO
+    double root2 = (-b - sqrt(discriminant)) / (2 * a);
 
-  cout << setprecision(2) << fixed;
-  cout << "result1 " << result1 << " result2 " << result2 << endl;
+    // TODO
+    double larger  = (root1 > root2) ? root1 : root2;
+    // TODO
+    double smaller = (root1 > root2) ? root2 : root1;
+
+    cout << setprecision(2) << fixed;
+    // TODO
+    cout << larger << " " << smaller << endl;
+
+    return 0;
 }
